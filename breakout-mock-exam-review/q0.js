@@ -16,7 +16,11 @@
  *    9
  */
 const count = function(arr) {
+  // const length = arr.length;
+  // console.log(length);
+  // return length;
 
+  return arr.length;
 };
 
 /* ===========================================================================
@@ -32,7 +36,18 @@ const count = function(arr) {
  *    36
  */
 const sum = function(arr) {
+  // get something ready to "hold" our sum
+  let total = 0;
 
+  // look through the cards/numbers
+  for (const num of arr) {
+    // add the number to the running sum
+    // total = total + num;
+    total += num;
+  }
+
+  // return the running sum
+  return total;
 };
 
 // To be used by mean. Do not alter.
@@ -54,7 +69,16 @@ const round = function(number) {
  *    4
  */
 const mean = function(arr) {
+  if (arr.length === 0) {
+    return null;
+  }
 
+  const total = sum(arr);
+  const numOfElements = count(arr);
+  const avg = total / numOfElements;
+  const rounded = round(avg);
+  console.log(rounded);
+  return rounded;
 };
 
 // Don't change below:
