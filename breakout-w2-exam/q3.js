@@ -30,7 +30,26 @@ Pro Tip: Remember to work incrementally. Start off just implementing the false a
 */
 
 const range = function(count, skipZero, descending) {
+  // check if a non-number got passed in
+  if (typeof count !== 'number') {
+    return [];
+  }
 
+  const numbers = [];
+
+  const start = skipZero ? 1 : 0;
+  const end = count + start;
+
+  for (let i = start; i < end; i++) {
+    numbers.push(i);
+  }
+
+  if (descending) {
+    numbers.reverse();
+  }
+
+  // console.log(numbers);
+  return numbers;
 };
 
 // Don't change below:

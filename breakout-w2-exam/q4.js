@@ -26,8 +26,42 @@ Examples:
 
 */
 
-const minmax = function(list) {
+// if (list === []) {
+//   return [undefined, undefined];
+// }
 
+// if (username === 'alice') {
+//   return true;
+// } else {
+//   return false;
+// }
+// return username === 'alice';
+
+const minmax = function(list) {
+  let min = list[0]
+  let max = list[0]
+  // linear
+  for (const elem of list) {
+    if (elem > max) {
+      max = elem;
+    }
+    if (elem < min) {
+      min = elem;
+    }
+  }
+  return [min, max];
+
+  // n^2
+  if (typeof list[0] === 'string') {
+    list.sort();
+  } else {
+    list.sort((a, b) => a - b);
+  }
+
+  const lowest = list[0];
+  const highest = list[list.length - 1];
+ 
+  return [lowest, highest];
 };
 
 // Don't change below:
