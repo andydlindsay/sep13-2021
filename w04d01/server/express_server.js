@@ -8,6 +8,8 @@ app.set('view engine', 'ejs');
 app.use(morgan('dev'));
 app.use(express.static('public'));
 
+// app.get('/games/:game-id') req.params['game-id']
+
 app.get('/flex', (req, res) => {
   res.render('flex');
 });

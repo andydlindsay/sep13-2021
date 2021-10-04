@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-heading {
+  text-decoration: overline;
+  font-size: 43px;
+  color: darkgoldenrod;
+}
+
+img.image {
+  width: 150px;
+  border-radius: 50%;
+}
+
+body div > img.image {
+  width: 400px;
+}

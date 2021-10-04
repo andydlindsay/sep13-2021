@@ -19,3 +19,20 @@ body {
 .blue {
   background-color: blue;
 }
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header {
+  width: 500px;
+  background-color: purple;
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar {
+  display: flex;
+}
