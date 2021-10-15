@@ -4,7 +4,7 @@ const productQueries = require('../db/product-queries');
 
 // router.use((req, res, next) => {
 //   const userId = req.cookies.user_id;
-//   // look them in the database
+//   // look them up in the database
 //   if (!admin) {
 //     return res.redirect('/login');
 //   }
