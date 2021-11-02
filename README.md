@@ -10,3 +10,6 @@
 * [BREAKOUT - CRUD with AJAX](/breakout-crud-with-ajax)
 * [W07D04 - Data Fetching & Other Side Effects](/w07d04)
 * [W08D01 - React Review](/w08d01)
+* [W08D02 - Unit & Integration Testing](/w08d02)
+* [W08D03 - End-to-End Testing with Cypress](/w08d03)
+* [W08D05 - Intro to Ruby](/w08d05)
